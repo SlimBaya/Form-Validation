@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title> FORMS VALIDATION </title>
+    <link rel="stylesheet" type="text/css" href="FORMS-VALIDATION.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h3 class="header-title">
+            Where would you like to go ?
+        </h3>
+    </header>
+    <main>
+        <form class="needs-validation novalidate" action="#" onsubmit="submitform()" >
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationfirstname">First name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First name" onblur="verifFirstName()" value="">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationlastname">Last name</label>
+                    <input type="text" class="form-control" id="lastname"  placeholder="Last name" onblur="verifLastName()" value="">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationusername">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" onblur="verifUserName()" value="">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationmail">E-mail Address </label>
+                    <input type="text" class="form-control" id="mail"  placeholder="E-mail Address" onblur="verifMail()" value="">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationpassword">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" maxlength="8" onblur="verifPassword()" value="">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationphone">Phone</label>
+                    <input type="phone" class="form-control" id="phoneNumber"  placeholder="Phone" onblur="verifPhone()" value="">
+                </div>
+            </div>
+            <h6 class="informations"> <strong> More informations about ? </strong> </h6>
+            <select class="countrys">
+                <option value="Select Contry">Select Contry</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="France">France</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Brazil">Brazil</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Spain">Spain</option>
+                <option value="Italy">Italy</option>
+                <option value="Malisia">Malisia</option>
+            </select>
+            <br> <br>
+            <input type="text" class="comment" id="comment" placeholder="Write your comment please ..."  value="" > 
+            <input type="submit" value="Submit Form" class="submit" id="submit">
+            <input type="reset" value= "Reset Form" class="reset" id="reset">
+        </form>
+
+   
+    
+    </main> 
+
+    <footer>
+
+    </footer>
+    <script src='FORMS-VALIDATION.js'> </script>        
+</body>
+</html>
